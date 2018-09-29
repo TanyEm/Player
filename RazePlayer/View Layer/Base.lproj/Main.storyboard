@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MUE-gQ-xeZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MUE-gQ-xeZ">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -37,7 +36,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DIr-Cs-JkJ">
-                                                    <rect key="frame" x="8" y="8" width="134" height="134"/>
+                                                    <rect key="frame" x="8" y="28" width="134" height="134"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="DIr-Cs-JkJ" secondAttribute="height" multiplier="1:1" id="NDi-zu-o8U"/>
                                                     </constraints>
@@ -48,13 +47,13 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A long name breaks me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWB-DO-UmI">
-                                                    <rect key="frame" x="8" y="150" width="134" height="14.666666666666657"/>
+                                                    <rect key="frame" x="8" y="170" width="134" height="14.666666666666657"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A long name breaks me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9e-bd-oXL">
-                                                    <rect key="frame" x="8" y="169" width="134" height="14.666666666666657"/>
+                                                    <rect key="frame" x="8" y="189.33333333333334" width="134" height="14.666666666666657"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -201,6 +200,10 @@
                         <viewLayoutGuide key="safeArea" id="U9E-6B-uF7"/>
                     </view>
                     <connections>
+                        <outlet property="backingImageBottomInset" destination="fOJ-NT-o1B" id="ns2-4j-VyQ"/>
+                        <outlet property="backingImageLeadingInset" destination="3ja-5F-sbm" id="35L-xB-BSc"/>
+                        <outlet property="backingImageTopInset" destination="gsi-UU-TVR" id="THw-iN-x44"/>
+                        <outlet property="backingImageTrailingInset" destination="7ax-x9-C26" id="mZE-Dp-tsp"/>
                         <outlet property="backingImageView" destination="COp-Ty-xGr" id="hx2-FR-fzR"/>
                         <outlet property="coverArtImage" destination="YvK-6V-2d4" id="KSt-i6-nyq"/>
                         <outlet property="coverImageContainer" destination="mnM-Yz-Upj" id="nMg-pc-GIs"/>
@@ -263,7 +266,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="724-uN-mNC">
-                                <rect key="frame" x="84" y="22.666666666666671" width="42" height="20.333333333333329"/>
+                                <rect key="frame" x="84" y="22" width="42" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -353,7 +356,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Mnd-Go-B6G">
-                                <rect key="frame" x="140.66666666666666" y="124.66666666666669" width="131.99999999999997" height="28"/>
+                                <rect key="frame" x="141" y="124.66666666666669" width="132" height="28"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wl7-PJ-1H4">
                                         <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
